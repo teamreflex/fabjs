@@ -1,0 +1,53 @@
+{
+  "name": "fab-api",
+  "version": "1.0.0",
+  "description": "TypeScript bindings for the internal Fab API.",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "buildtest": "npm run tsc && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamreflex/fab-api.git"
+  },
+  "keywords": [
+    "fab",
+    "kpop",
+    "api",
+    "node"
+  ],
+  "author": "Kyle Ward",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teamreflex/fab-api/issues"
+  },
+  "homepage": "https://github.com/teamreflex/fab-api#readme",
+  "dependencies": {
+    "@types/luxon": "^3.0.1",
+    "luxon": "^3.0.4",
+    "node-fetch": "^2.6.7",
+    "typed-emitter": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1.1",
+    "@types/node-fetch": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "directories": {
+    "test": "tests"
+  }
+}
